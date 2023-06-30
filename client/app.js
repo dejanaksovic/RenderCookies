@@ -1,4 +1,4 @@
-const url = "https://test-backend-xpao.onrender.com"
+const url = "https://test-backend-xpao.onrender.com/lolo"
 
 const test = async() => {
     try {
