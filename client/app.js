@@ -1,6 +1,8 @@
+const url = "https://test-backend-xpao.onrender.com"
+
 const test = async() => {
     try {
-        const res = await fetch('http://localhost:3000')
+        const res = await fetch(url)
         const data = await res.json()
         console.log(data);
     }
