@@ -7,8 +7,8 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.cookie( "Test", "1234", { httpOnly: 'true', maxAge: "30000", sameSite: 'lax', domain: process.env.REDIRECT_URL } )
-    res.cookie( "NewTest", "22222", { httpOnly: true, sameSite: 'none', secure: true, maxAge: '30000', domain: process.env.REDIRECT_URL } )
+    res.cookie( "Test", "1234", { httpOnly: 'true', maxAge: "30000", sameSite: 'lax' } )
+    res.cookie( "NewTest", "22222", { httpOnly: true, sameSite: 'none', secure: true, maxAge: '30000' } )
     return res.redirect(process.env.REDIRECT_URL)
 })
 
